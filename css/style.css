@@ -805,7 +805,7 @@ h6 {
 }
 
 .testimonial .owl-nav .owl-prev:hover {
-    background: var(--bs-dark);
+    background: var(--yellowColor);
     color: var(--bs-white);
 }
 
@@ -821,7 +821,7 @@ h6 {
 }
 
 .testimonial .owl-nav .owl-next:hover {
-    background: var(--bs-dark);
+    background: var(--yellowColor);
     color: var(--bs-white);
 }
 
@@ -1094,4 +1094,153 @@ ul {
     text-transform: capitalize;
     font-weight: 400;
     font-size: 1.2rem;
+}
+
+.services {
+    padding: 70px 0px;
+}
+
+.services__subtitle {
+    color: var(--greenColor);
+    text-transform: capitalize;
+}
+
+.services h1 {
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.services__item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: var(--grayColor);
+    border-radius: 5px;
+    border: 1px solid var(--grayColor);
+    position: relative;
+}
+
+.services__item::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--greenColor);
+}
+
+.services__item:hover::after {
+    width: 100%;
+    transition: .4s linear;
+}
+
+.services__item:hover>.services__number {
+    -webkit-text-fill-color: var(--greenColor);
+}
+
+.services__number {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 7px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--greenColor);
+    font-weight: 800;
+}
+
+.services__title {
+    text-transform: capitalize;
+    color: var(--greenColor);
+}
+
+.services__p {
+    margin-top: 25px;
+}
+
+.footer {
+    background-color: var(--greenColor);
+}
+
+.copyright {
+    background-color: var(--greenColor);
+}
+
+.footer .footer-item .footer-btn a {
+    color: var(--greenColor);
+}
+
+.footer .footer-item .footer-btn a:hover {
+    background: transparent;
+    border: none;
+}
+
+.custom-btn-large {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s linear;
+    text-transform: capitalize;
+
+}
+
+.custom-btn-small {
+    padding: 1.2rem 1.5rem;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s linear;
+    text-transform: capitalize;
+
+}
+
+.custom-btn-yellow {
+    background-color: var(--yellowColor);
+    color: white;
+    font-weight: 600;
+}
+
+.custom-btn-green {
+    background-color: var(--greenColor);
+    color: white;
+}
+
+.custom-btn-yellow:hover {
+    background-color: white;
+    color: var(--greenColor);
+}
+
+.custom-btn-green:hover {}
+
+
+
+.navbar .navbar-nav .nav-item {
+    color: black;
+}
+
+.navbar .navbar-nav .nav-item:hover {
+    color: var(--greenColor);
+}
+
+.navbar .navbar-nav {
+    background-color: transparent;
+}
+
+.blog .blog-item .blog-content a.btn {
+    color: var(--yellowColor);
+}
+
+.blog .blog-item .blog-content a.btn:hover {
+    color: var(--greenColor) !important;
+}
+
+.faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: var(--greenColor);
+}
+
+.faq-section .accordion .accordion-item .accordion-header .accordion-button {
+    background: var(--yellowColor);
 }
