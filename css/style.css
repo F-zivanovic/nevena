@@ -44,21 +44,12 @@
 
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Outfit", sans-seri
-} */
+
 
 /*** Spinner Start ***/
 #spinner {
@@ -1059,11 +1050,12 @@ ul {
 }
 
 .about {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/nevena.png');
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
     background-repeat: no-repeat;
     background-position: top right;
     padding: 70px 0px;
-    background-color: var(--whiteColor);
+    background-color: var(--blackColor);
 }
 
 .about h1 {
@@ -1143,9 +1135,7 @@ ul {
     font-size: 45px;
     display: block;
     margin-bottom: 7px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: var(--greenColor);
+    color: var(--greenColor);
     font-weight: 800;
 }
 
@@ -1206,6 +1196,7 @@ ul {
 .custom-btn-green {
     background-color: var(--greenColor);
     color: white;
+    border: 2px solid var(--greenColor);
 }
 
 .custom-btn-yellow:hover {
@@ -1213,7 +1204,10 @@ ul {
     color: var(--greenColor);
 }
 
-.custom-btn-green:hover {}
+.custom-btn-green:hover {
+    background: transparent;
+    color: var(--greenColor);
+}
 
 
 
@@ -1243,4 +1237,14 @@ ul {
 
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
     background: var(--yellowColor);
+}
+
+.footer-item .logo{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.footer-item .logo h3{
+   margin: 0;
 }
