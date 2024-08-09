@@ -357,8 +357,17 @@ body {
 
 @media(width<992px){
 
+    .header>.container{
+        height: auto;
+    }
+
     .header{
-        height: 70vh;
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .header .calrousel-img{
+        display: none;
     }
 }
 
