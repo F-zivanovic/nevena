@@ -355,8 +355,22 @@ body {
     height: 100%;
 }
 
+@media(width<992px){
+
+    .header{
+        height: 70vh;
+    }
+}
 
 
+@media(width<576px){
+
+    .header-btn{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
 .header-carousel .header-carousel-item .carousel-caption {
     position: absolute;
     width: 100%;
