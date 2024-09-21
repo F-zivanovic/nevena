@@ -1274,3 +1274,34 @@ ul {
 .footer-item .logo h3 {
     margin: 0;
 }
+
+.cta{
+    padding: 70px 0;
+}
+
+.cta h2{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.cta p{
+    margin: 2rem 0;
+}
+
+.cta .custom-btn-green{
+    background-color: var(--yellowColor);
+}
+
+.cta .custom-btn-green:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid var(--yellowColor);
+}
+
+@media(width < 768px){
+    .cta h2{
+        font-size: 1.8rem;
+    }
+}
